@@ -29,7 +29,7 @@ class FileServerHandler : SimpleChannelInboundHandler<String>() {
         cause.printStackTrace()
         if (ctx.channel().isActive) {
             ctx.writeAndFlush("ERR: ${cause.javaClass.simpleName}: ${cause.message}")
-                .addListener { ChannelFutureListener.CLOSE }
+                .addListener(ChannelFutureListener.CLOSE)
         }
     }
 }

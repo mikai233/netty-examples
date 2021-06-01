@@ -19,6 +19,7 @@ dependencies {
     implementation("io.netty", "netty-all", "4.1.65.Final")
     implementation("org.jetbrains.kotlinx", "kotlinx-coroutines-core", "1.5.0")
     implementation("org.scala-lang", "scala-library", "2.13.6")
+    implementation("com.sun.activation", "jakarta.activation", "2.0.1")
 }
 
 tasks.getByName<Test>("test") {
