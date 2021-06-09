@@ -4,7 +4,7 @@ plugins {
     scala
 }
 
-group = "com.mdreamfever.netty.examples"
+group = "com.mdreamfever"
 version = "1.0-SNAPSHOT"
 
 repositories {
